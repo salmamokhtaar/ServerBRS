@@ -607,7 +607,7 @@ dotenv.config(); // Ensure this is at the top
 
 const app = express();
 const port = process.env.PORT || 3000;
-
+app.use(cors()); // Allow all origins
 app.use(cors({
   origin: 'https://brs-liart.vercel.app' // No trailing slash
 }));
