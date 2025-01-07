@@ -609,7 +609,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 app.use(cors({
-  origin: 'https://serverbrs.onrender.com' // No trailing slash
+  origin: 'https://brs-liart.vercel.app' // No trailing slash
 }));
 
 app.use(express.json());
